@@ -32,19 +32,19 @@ App Todo List in Flutter
   INTERNAL_PORT = 5555
 ```
 
-###### [Localhost command] Run the following command to switch adb on your device to work over the network using the internal port
+###### Run the following command to switch adb on your device to work over the network using the internal port
 
 ```
   adb tcpip INTERNAL_PORT
 ```
 
-###### [Localhost command] Check adb connection from localhost
+###### Check adb connection from localhost
 
 ```
   adb connect SMARTPHONE_LOCAL_IP:INTERNAL_PORT
 ```
 
-###### [Localhost command] Starts ngrok tcp forwarding to your mobile or if you prefer you can forward a chosen port on your router to the mobile
+###### Starts ngrok tcp forwarding to your mobile or if you prefer you can forward a chosen port on your router to the mobile
 
 - Ngrok describes itself as “expose a local server behind a NAT or firewall to the internet.”, making our lives easier.
 
@@ -52,7 +52,7 @@ App Todo List in Flutter
   ngrok tcp SMARTPHONE_LOCAL_IP:INTERNAL_PORT
 ```
 
-###### [Gitpod command] Connect from your Gitpod to your localhost for debugging
+###### Connect from your Gitpod to your localhost for debugging
 
 ```
   adb connect NGROK_ADDRESS:NGROK_PORT
