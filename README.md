@@ -5,9 +5,6 @@
 App Todo List in Flutter
 
 
-## Gitpod Flutter
-
-
 [![made-with-flutter](https://img.shields.io/badge/Made%20with-Gitpod-1f425f.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-1f425f.svg)](https://github.com/martins86/app-todolist/blob/master/LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/vtorres/gitpod-flutter?style=social&label=Star)](https://github.com/martins86/app-todolist/)
@@ -15,9 +12,7 @@ App Todo List in Flutter
 
 
 
-## Start in Flutter
-
-### Web
+## Start in Web
 
 ```
   flutter run -d web-server --web-port=8080 --web-hostname=0.0.0.0
