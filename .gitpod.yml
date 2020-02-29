@@ -1,0 +1,51 @@
+image:
+  file: .gitpod.dockerfile
+
+github:
+  prebuilds:
+    # enable for the master/default branch (defaults to true)
+    master: true
+    # enable for all branches in this repo (defaults to false)
+    branches: false
+    # enable for pull requests coming from this repo (defaults to true)
+    pullRequests: true
+    # enable for pull requests coming from forks (defaults to false)
+    pullRequestsFromForks: false
+    # add a check to pull requests (defaults to true)
+    addCheck: true
+    # add a "Review in Gitpod" button as a comment to pull requests (defaults to false)
+    addComment: false
+    # add a "Review in Gitpod" button to the pull request's description (defaults to false)
+    addBadge: false
+    # add a label once the prebuild is ready to pull requests (defaults to false)
+    addLabel: false
+
+tasks:
+  - before: >
+      source ~/.bashrc
+    init: |
+      echo "Wait for the installation"
+      yes | sdk i java 8.0.232-open
+      sdk i kotlin
+      sdkmanager --update
+      yes | sdkmanager --licenses
+      flutter pub get
+      flutter run -d web-server --no-resident
+    command: >
+      echo "Ready to start!"
+
+ports:
+  - port: 8080
+    onOpen: open-preview
+  - port: 5037
+    onOpen: ignore
+
+vscode:
+  extensions:
+    - Dart-Code.dart-code@3.5.0-beta.1:Wg2nTABftVR/Dry4tqeY1w==
+    - Dart-Code.flutter@3.5.0:/kOacEWdiDRLyN/idUiM4A==
+    - Nash.awesome-flutter-snippets@2.0.3:6jLJSOqEGV5k8R0xYG7Oqg==
+    - adelphes.android-dev-ext@0.8.0:z3IVaDRzKS8IeFWrhyaPAA==
+    - mpotthoff.vscode-android-webview-debug@1.1.1:TY2OLKxxIJSs2lt3TgOpjw==
+    - DiemasMichiels.emulate@1.3.0:sXCoQONS3kXpSTBuMnxkyQ==
+    - fwcd.kotlin@0.2.10:kX3nrW3fv/LjU/QSQ41zYA==
