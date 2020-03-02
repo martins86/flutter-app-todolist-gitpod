@@ -7,7 +7,7 @@ App Todo List in Flutter
 
 [![made-with-flutter](https://img.shields.io/badge/Made%20with-Gitpod-1f425f.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-1f425f.svg)](https://github.com/martins86/app-todolist/blob/master/LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/vtorres/gitpod-flutter?style=social&label=Star)](https://github.com/martins86/app-todolist/)
+[![GitHub stars](https://img.shields.io/github/stars/martins86/app-todolist?style=social&label=Star)](https://github.com/martins86/app-todolist/)
 
 
 
