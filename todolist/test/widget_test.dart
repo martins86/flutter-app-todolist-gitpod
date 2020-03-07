@@ -14,5 +14,9 @@ void main() {
   testWidgets('Test App Build', (WidgetTester tester) async {
     // Build our app.
     await tester.pumpWidget(App());
+
+    // Tap the '+' icon and trigger a frame.
+    await tester.tap(find.byIcon(Icons.add));
+    await tester.pump();
   });
 }
