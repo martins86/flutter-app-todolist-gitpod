@@ -28,6 +28,7 @@ class HomePage extends StatefulWidget {
     items.add(Item(title: "Item 03", done: false));
     items.add(Item(title: "Item 04", done: true));
   }
+
   @override
   _HomePageState createState() => _HomePageState();
 }
@@ -39,12 +40,11 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: Text("To Do: List"),
       ),
-      body: Container(
-        child: Container(
-          child: Center(
-            child: Text("Olá, Mundo!"),
-          ),
-        ),
+      body: ListView.builder(
+        itemCount: widget.items.length,
+        itemBuilder: (BuildContext context, int index) {
+          return Text(widget.items[index].title);
+        },
       ),
     );
   }
