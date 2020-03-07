@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'models/item.dart';
+
 void main() => runApp(App());
 
 class App extends StatelessWidget {
@@ -17,6 +19,15 @@ class App extends StatelessWidget {
 }
 
 class HomePage extends StatefulWidget {
+  var items = new List<Item>();
+
+  HomePage() {
+    items = [];
+    items.add(Item(title: "Item 01", done: false));
+    items.add(Item(title: "Item 02", done: true));
+    items.add(Item(title: "Item 03", done: false));
+    items.add(Item(title: "Item 04", done: true));
+  }
   @override
   _HomePageState createState() => _HomePageState();
 }
