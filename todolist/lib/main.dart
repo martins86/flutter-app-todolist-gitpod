@@ -7,6 +7,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'To Do: List',
+      debugShowCheckedModeBanner: false, // Remove banner debug
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
