@@ -88,7 +88,7 @@ class _HomePageState extends State<HomePage> {
             fontSize: 20,
           ),
           decoration: InputDecoration(
-            labelText: "To Do So: ",
+            labelText: "New task:",
             labelStyle: TextStyle(
               color: Colors.white,
             ),
