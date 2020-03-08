@@ -24,10 +24,6 @@ class HomePage extends StatefulWidget {
 
   HomePage() {
     items = [];
-    // items.add(Item(title: "Item 01", done: false));
-    // items.add(Item(title: "Item 02", done: true));
-    // items.add(Item(title: "Item 03", done: false));
-    // items.add(Item(title: "Item 04", done: true));
   }
 
   @override
@@ -117,7 +113,7 @@ class _HomePageState extends State<HomePage> {
             key: Key(item.title),
             background: Container(
               color: Colors.red.withOpacity(0.2),
-              // child: Text("Remove Task"),
+              // child: Text("Remove"),
             ),
             onDismissed: (direction) {
               final itemRemove = item.title;
