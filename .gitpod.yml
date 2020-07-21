@@ -31,8 +31,9 @@ tasks:
       yes | sdkmanager --licenses
       flutter pub get
       flutter run -d web-server --no-resident
-    command: >
-      echo "Ready to start!"
+  - command: >
+      cd ./todolist &&
+      flutter run -d web-server --web-port=8080 --web-hostname=0.0.0.0
 
 ports:
   - port: 8080
